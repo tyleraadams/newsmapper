@@ -1,0 +1,21 @@
+
+<div id = "toolbar">   
+  <h1>NewsMapper!</h1>
+  <%if @access_token%>
+    <form action="/" method="post">
+      <input type="text" name="twitter_tags">
+      <input type="submit" value="search">
+      </form>
+</div>
+
+  <div id="map-canvas">
+  </div>
+  <%else%>
+    <div id = "toolbar">   
+      <button id="sign_in"><a href="/sign_in">Sign In with Twitter</a></button>
+    </div>
+  
+    <div id="map-canvas">
+    </div>
+  <%end%>
+
