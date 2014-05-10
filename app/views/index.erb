@@ -1,7 +1,7 @@
-
-<div id = "toolbar">   
-  <h1>NewsMapper!</h1>
-  <%if @access_token%>
+<%if @access_token%>
+  <div id = "toolbar">   
+    <h1>NewsMapper!</h1>
+    <button id="sign_out"><a href="/sign_out">Sign Out</a></button>
     <form action="/" method="post">
       <input type="text" name="twitter_tags">
       <input type="submit" value="search">
@@ -11,7 +11,9 @@
   <div id="map-canvas">
   </div>
   <%else%>
-    <div id = "toolbar">   
+
+    <div id = "toolbar">
+      <h1>NewsMapper!</h1>   
       <button id="sign_in"><a href="/sign_in">Sign In with Twitter</a></button>
     </div>
   

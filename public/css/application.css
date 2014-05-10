@@ -18,7 +18,6 @@ button {
   border:none;
   padding:10px;
   font-size:1.25em;
-  margin-top: -65px;
   float:right;
 }
 
@@ -35,17 +34,16 @@ button:hover {
   height: 700px;
 }
 
-#tweet_list {
-	font-size:10px;
+#sign_out {
+	text-align:center;
+
 }
 
-.geo {
-	background-color: gold;
-}
 
 form {
-	float:right;
 	margin-top:9px;
+	margin-left:320px;
+	display:inline;
 }
 
 input {
